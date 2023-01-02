@@ -1,0 +1,23 @@
+<Button>
+    font_size: 26
+    size_hint: (0.5,0.3)
+<TextInput>
+    font_size:26
+<MyLayout>
+    canvas.before:
+        Color:
+            rgba:(0,95/255,95/255,1)
+        Rectangle:
+            pos: self.pos
+            size: self.size
+    FloatLayout:
+        size: root.width, root.height
+        TextInput:
+            hint_text: "Enter number"
+            size_hint: 0.5, None
+            background_color: (1,1,1,1)
+            background_normal: ""
+            pos_hint: {"center_x":0.5,"top":0.95}
+        Button:
+            text: "Show"
+            pos_hint: {"x":0.25, "y":0}
