@@ -8,7 +8,8 @@ Builder.load_file('rules.kv')
 
 
 class MyLayout(Widget):
-    pass
+    def showFunc(self):
+        print("hello")
 
 
 class NumberDisplayerApp(App):
