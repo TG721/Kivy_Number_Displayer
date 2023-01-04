@@ -3,6 +3,8 @@
     size_hint: (0.6,0.3)
 <TextInput>
     font_size:26
+<Label>
+    font_size:34
 <MyLayout>
     canvas.before:
         Color:
@@ -13,6 +15,7 @@
     FloatLayout:
         size: root.width, root.height
         TextInput:
+            id:number_input
             hint_text: "Enter number"
             size_hint: 0.5, None
             background_color: (1,1,1,1)
@@ -23,6 +26,14 @@
             text: "Show"
             pos_hint: {"x":0.25, "y":0}
             on_press: root.showFunc()
+        Label:
+            id: result_num
+            text: ""
+            multiline:True
+            font_name: "acad_nusx_geo.ttf"
+            size_hint: None, None
+            pos_hint: {"center_x":0.5, "y":0.45}
+
 
 <RoundedButton@Button>
     background_color: (0,0,0,0)
