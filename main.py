@@ -13,7 +13,7 @@ Builder.load_file('rules.kv')
 class MyLayout(Widget):
     arrUpToTwenty = ["i","erTi","ori","sami","oTxi","xuTi","eqvsi","Svidi","rva","cxra","aTi",
                      "TerTmeti","Tormeti","cameti","ToTxmeti","Txutmeti","Teqvsmeti", "Cvidmeti",
-                     "Tvrameti", "Cxrameti", "oci"
+                     "Tvrameti", "cxrameti", "oci"
                      ]
     arrHundreds = ["as","oras","samas","oTxas","xuTas",
                    "eqvsas", "Svidas", "rvaas","cxraas"
