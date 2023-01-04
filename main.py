@@ -29,9 +29,9 @@ class MyLayout(Widget):
         answer = ""
 
         if input=="0":
-            result.text="nuli"
+            answer="nuli"
         elif input=="1000":
-            result.text="aTasi"
+            answer="aTasi"
         if len(input)==3:
             if int(inputNum)%100 !=0:
                 answer = self.arrHundreds[int(inputNum / 100) - 1] + " "
